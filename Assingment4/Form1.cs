@@ -8,27 +8,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Assingment4 {-
+namespace Assingment4 {
     public partial class Games : Form {
         public Games() {
             InitializeComponent();
             button1.Enabled = false;
-            Coin.Checked = false;
-            Dice.Checked = false;
-            Card.Checked = false;
 
         }
 
         private void Coin_CheckedChanged(object sender, EventArgs e) {
-
+            Coin.Checked = true;
+            button1.Enabled = true;
         }
 
         private void Dice_CheckedChanged(object sender, EventArgs e) {
-
+            button1.Enabled = true;
         }
 
         private void Card_CheckedChanged(object sender, EventArgs e) {
-
+            button1.Enabled = true;
         }
 
         private void button1_Click(object sender, EventArgs e) {
