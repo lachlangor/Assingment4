@@ -12,30 +12,38 @@ namespace Assingment4 {
     public partial class Games : Form {
         public Games() {
             InitializeComponent();
-            button1.Enabled = false;
+            startButton.Enabled = false;
 
         }
 
         private void Coin_CheckedChanged(object sender, EventArgs e) {
-            Coin.Checked = true;
-            button1.Enabled = true;
+            coinRadioButton.Checked = true;
+            startButton.Enabled = true;
         }
 
         private void Dice_CheckedChanged(object sender, EventArgs e) {
-            button1.Enabled = true;
+            startButton.Enabled = true;
         }
 
         private void Card_CheckedChanged(object sender, EventArgs e) {
-            button1.Enabled = true;
+            startButton.Enabled = true;
         }
 
         private void button1_Click(object sender, EventArgs e) {
-
+            if (coinRadioButton.Checked){
+                Form GameForm = new Two_Up();
+                GameForm.Show();
+                } else if (diceRadioButton.Checked) {
+                Form GameForm = new Which_Dice_Game();
+                GameForm.Show();
+                } else if (cardRadioButton.Checked) {
+                Form GameForm = new Which_Card_Game();
+                GameForm.Show();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e) {
             Close();
-            // test com
         }
     }
 }

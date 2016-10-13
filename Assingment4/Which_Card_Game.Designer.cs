@@ -23,49 +23,55 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.exitButton = new System.Windows.Forms.Button();
+            this.selectComboBox = new System.Windows.Forms.ComboBox();
+            this.chooseGameLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // exitButton
             // 
-            this.button1.Location = new System.Drawing.Point(45, 163);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(192, 32);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Exit";
-            this.button1.UseVisualStyleBackColor = true;
+            this.exitButton.Location = new System.Drawing.Point(68, 251);
+            this.exitButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(288, 49);
+            this.exitButton.TabIndex = 5;
+            this.exitButton.Text = "Exit";
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
-            // comboBox1
+            // selectComboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.selectComboBox.FormattingEnabled = true;
+            this.selectComboBox.Items.AddRange(new object[] {
             "Twenty-one",
             "Crazy Eights"});
-            this.comboBox1.Location = new System.Drawing.Point(45, 93);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(192, 21);
-            this.comboBox1.TabIndex = 4;
+            this.selectComboBox.Location = new System.Drawing.Point(68, 143);
+            this.selectComboBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.selectComboBox.Name = "selectComboBox";
+            this.selectComboBox.Size = new System.Drawing.Size(286, 28);
+            this.selectComboBox.TabIndex = 4;
+            this.selectComboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // label1
+            // chooseGameLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label1.Location = new System.Drawing.Point(15, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(244, 26);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Choose a Game to Play";
+            this.chooseGameLabel.AutoSize = true;
+            this.chooseGameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.chooseGameLabel.Location = new System.Drawing.Point(22, 52);
+            this.chooseGameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.chooseGameLabel.Name = "chooseGameLabel";
+            this.chooseGameLabel.Size = new System.Drawing.Size(356, 37);
+            this.chooseGameLabel.TabIndex = 3;
+            this.chooseGameLabel.Text = "Choose a Game to Play";
             // 
             // Which_Card_Game
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(280, 257);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(420, 395);
+            this.Controls.Add(this.exitButton);
+            this.Controls.Add(this.selectComboBox);
+            this.Controls.Add(this.chooseGameLabel);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Which_Card_Game";
             this.Text = "Which_Card_Game";
             this.ResumeLayout(false);
@@ -75,8 +81,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.ComboBox selectComboBox;
+        private System.Windows.Forms.Label chooseGameLabel;
     }
 }
