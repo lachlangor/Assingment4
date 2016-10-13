@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assingment4", "Assingment4\Assingment4.csproj", "{39208B8A-56C8-4D8F-BB9B-4D3468F9970D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Low Level Objects Library", "Low Level Objects Library\Low Level Objects Library.csproj", "{1D1DE0FE-9F21-41A3-A397-F6C78FD2961B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Games Logic Library", "Games Logic Library\Games Logic Library.csproj", "{D4E9CD6D-2ECA-4C7E-9FBF-5994D0FAED20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{39208B8A-56C8-4D8F-BB9B-4D3468F9970D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39208B8A-56C8-4D8F-BB9B-4D3468F9970D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39208B8A-56C8-4D8F-BB9B-4D3468F9970D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D1DE0FE-9F21-41A3-A397-F6C78FD2961B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D1DE0FE-9F21-41A3-A397-F6C78FD2961B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D1DE0FE-9F21-41A3-A397-F6C78FD2961B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D1DE0FE-9F21-41A3-A397-F6C78FD2961B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4E9CD6D-2ECA-4C7E-9FBF-5994D0FAED20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4E9CD6D-2ECA-4C7E-9FBF-5994D0FAED20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4E9CD6D-2ECA-4C7E-9FBF-5994D0FAED20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4E9CD6D-2ECA-4C7E-9FBF-5994D0FAED20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

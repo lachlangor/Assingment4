@@ -13,5 +13,9 @@ namespace Assingment4 {
         public Two_Up() {
             InitializeComponent();
         }
+
+        private void Two_Up_Load(object sender, EventArgs e) {
+
+        }
     }
 }
