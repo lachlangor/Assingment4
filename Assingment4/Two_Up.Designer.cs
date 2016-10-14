@@ -42,6 +42,7 @@
             this.playerPictureBox.Location = new System.Drawing.Point(38, 71);
             this.playerPictureBox.Name = "playerPictureBox";
             this.playerPictureBox.Size = new System.Drawing.Size(150, 150);
+            this.playerPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.playerPictureBox.TabIndex = 0;
             this.playerPictureBox.TabStop = false;
             // 
@@ -50,6 +51,7 @@
             this.computerPictureBox.Location = new System.Drawing.Point(250, 71);
             this.computerPictureBox.Name = "computerPictureBox";
             this.computerPictureBox.Size = new System.Drawing.Size(150, 150);
+            this.computerPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.computerPictureBox.TabIndex = 1;
             this.computerPictureBox.TabStop = false;
             // 
@@ -109,6 +111,7 @@
             this.throwCoinsButton.TabIndex = 7;
             this.throwCoinsButton.Text = "Throw Coins";
             this.throwCoinsButton.UseVisualStyleBackColor = true;
+            this.throwCoinsButton.Click += new System.EventHandler(this.throwCoinsButton_Click);
             // 
             // playAgainButton
             // 
@@ -119,6 +122,7 @@
             this.playAgainButton.Text = "Play Again";
             this.playAgainButton.UseVisualStyleBackColor = true;
             this.playAgainButton.Visible = false;
+            this.playAgainButton.Click += new System.EventHandler(this.playAgainButton_Click);
             // 
             // cancelGameButton
             // 
@@ -128,6 +132,7 @@
             this.cancelGameButton.TabIndex = 9;
             this.cancelGameButton.Text = "Cancel Game";
             this.cancelGameButton.UseVisualStyleBackColor = true;
+            this.cancelGameButton.Click += new System.EventHandler(this.cancelGameButton_Click);
             // 
             // Two_Up
             // 
